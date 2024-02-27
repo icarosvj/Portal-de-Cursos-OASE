@@ -19,49 +19,113 @@
     user-select: none;
 }
 
-nav {
-    width: 100vw;
-    height: 60px;
-    background-image: linear-gradient(#182B5A, #121F40);
+body {
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+nav {
+    margin-top: 1.5vh;
+    width: 100vw;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
     position: fixed;
+
+    width: 60vw;
+    height: 45px;
+    background-image: linear-gradient(#182B5A, #121F40);
+    border-radius: 20px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* top-right-bottom-left*/
+    padding: 0px 20px 0px 20px;
+
 }
 
 .nav-title {
-    width: 300px;
+    margin-left: 1vw;
     font-family: sf-bold;
-    font-size: 1.6rem;
     color: #fff;
-
-    /*text-transform: uppercase;*/
-    margin-left: 7rem;
+    font-size: 1.3rem;
 }
 
 .nav-items {
-    font-family: sf-semi;
-    color:#fff;
-    margin-right: 7rem;
+    margin-right: 1vw;
 }
 
-.nav-items li, a {
-    list-style: none;
-    text-decoration: none;
-
+.nav-items,
+.nav-items a,
+.dropdown {
     display: inline-block;
-    margin-right: 5px;
 
+    font-family: sf-regular;
+    text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    padding-left: 15px;
 }
 
-#nav-button-exit {
+/* DROPDOWN */
+
+.dropdown span {
+    padding: 5px 10px 10px 10px;
+}
+
+.dropdown:hover span {
+    padding: 5px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     color: #182B5A;
     background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.dropdown:hover .dropsection {
+    display: block;
+}
+
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+
     width: auto;
-    /* top | right | bottom | left */
-    padding: 5px 15px 5px 15px; 
-    border-radius: 10px;
+    height: auto;
+
+    margin-top: 13px;
+    padding: 15px 13px 5px 0px;
+
+    /* top-right-bottom-left*/
+    border-radius: 0px 0px 15px 15px;
+    background-color: #fff;
+
+}
+
+.dropdown-content a {
+
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+    color: #182B5A;
+}
+
+.dropsection {
+    display: none;
+    position: absolute;
+
+    top: 30px;
+    height: 20px;
+    width: 65.28px;
+    background-color: #fff;
 }
