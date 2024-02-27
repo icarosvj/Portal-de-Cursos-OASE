@@ -1,0 +1,67 @@
+/*add-font*/
+@font-face {
+    font-family: sf-regular;
+    src: url(../font/sf-regular.otf);
+}
+
+@font-face {
+    font-family: sf-semi;
+    src: url(../font/sf-semibold.otf);
+}
+
+@font-face {
+    font-family: sf-bold;
+    src: url(../font/sf-bold.otf);
+}
+
+* {
+    margin: 0px;
+    user-select: none;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-image: linear-gradient(#182B5A, #121F40);
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    width: 300px;
+    font-family: sf-bold;
+    font-size: 1.6rem;
+    color: #fff;
+
+    /*text-transform: uppercase;*/
+    margin-left: 7rem;
+}
+
+.nav-items {
+    font-family: sf-semi;
+    color:#fff;
+    margin-right: 7rem;
+}
+
+.nav-items li, a {
+    list-style: none;
+    text-decoration: none;
+
+    display: inline-block;
+    margin-right: 5px;
+
+    color: #fff;
+    font-size: 18px;
+}
+
+#nav-button-exit {
+    color: #182B5A;
+    background-color: #fff;
+    width: auto;
+    /* top | right | bottom | left */
+    padding: 5px 15px 5px 15px; 
+    border-radius: 10px;
+}
