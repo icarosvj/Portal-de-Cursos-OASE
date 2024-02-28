@@ -19,13 +19,6 @@
     user-select: none;
 }
 
-body {
-    background-image: url(/img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 nav {
     margin-top: 3vh;
     width: 100vw;
