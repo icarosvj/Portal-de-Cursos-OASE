@@ -27,7 +27,7 @@ body {
 }
 
 nav {
-    margin-top: 1.5vh;
+    margin-top: 3vh;
     width: 100vw;
     height: 45px;
 
@@ -41,6 +41,7 @@ nav {
     width: 60vw;
     height: 45px;
     background-image: linear-gradient(#182B5A, #121F40);
+    box-shadow: 0px 2px 15px #00000050;
     border-radius: 20px;
 
     display: flex;
@@ -53,10 +54,16 @@ nav {
 }
 
 .nav-title {
-    margin-left: 1vw;
+    margin-left: 3.5vw;
     font-family: sf-bold;
     color: #fff;
     font-size: 1.3rem;
+}
+
+#nav-logo {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
 }
 
 .nav-items {
@@ -70,14 +77,24 @@ nav {
 
     font-family: sf-regular;
     text-decoration: none;
-    color: #fff;
     padding-left: 15px;
 }
+
+.items-li {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.items-li:hover {
+    color: #cacaca;
+}
+
 
 /* DROPDOWN */
 
 .dropdown span {
     padding: 5px 10px 10px 10px;
+    color: #fff;
 }
 
 .dropdown:hover span {
@@ -107,7 +124,7 @@ nav {
     padding: 15px 13px 5px 0px;
 
     /* top-right-bottom-left*/
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 15px 15px 15px;
     background-color: #fff;
 
 }
