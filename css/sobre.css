@@ -41,7 +41,7 @@ main {
 
 .about,
 .dev,
-.dev-cards-section {
+.about-title {
     width: 60vw;
     height: auto;
 
@@ -52,22 +52,28 @@ main {
 }
 
 .about,
-.dev-cards-section {
+.card {
     background-image: linear-gradient(#ffffff9d, #b1b1b16b);
     border-radius: 30px;
     box-shadow: 0px 2px 15px #00000050;
 
 }
 
-.about-title {
-    width: 80%;
+.title {
     font-family: sf-bold;
-    font-size: 1.5rem;
-    color: #132247;
+    font-size: 2rem;
+
+    width: 200px;
+    height: 68px;
+
     text-shadow: 0px 2px 15px #00000028;
+    background-image: linear-gradient(#182B5A, #121F40);
+    color: #fff;
+    border-radius: 15px;
 
     margin-top: 4vh;
     margin-bottom: 4vh;
+    padding: 15px;
     text-align: center;
 }
 
@@ -77,10 +83,9 @@ main {
     font-size: 1.5rem;
 
     width: 80%;
-    margin-bottom: 4vh;
 
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
 
     text-align: center;
 
@@ -97,4 +102,53 @@ main {
     margin-bottom: 4vh;
     padding: 15px;
     text-align: center;
+}
+
+/* Cards */
+
+.dev-cards-section {
+    width: 60vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    margin: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    margin: 25px 0px 25px 0px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 2rem;
+    font-family: sf-bold;
+    color: #182B5A;
+    margin-bottom: 15px;
+}
+
+.user-role {
+    font-size: 1.7rem;
+    font-family: sf-semi;
+    color: #182B5A;
+    margin-bottom: 15px;
+}
+
+.user-desc {
+    text-align: center;
+    font-family: sf-regular;
+    padding: 0px 25px 25px 25px;
+}
+
+.about, .card {
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
 }
