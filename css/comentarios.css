@@ -1,0 +1,118 @@
+/*add-font*/
+@font-face {
+    font-family: sf-regular;
+    src: url(../font/sf-regular.otf);
+}
+
+@font-face {
+    font-family: sf-semi;
+    src: url(../font/sf-semibold.otf);
+}
+
+@font-face {
+    font-family: sf-bold;
+    src: url(../font/sf-bold.otf);
+}
+
+
+* {
+    margin: 0px;
+    user-select: none;
+    box-sizing: border-box;
+    user-select: none
+}
+
+
+body {
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    margin-top: 3vh;
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comments {
+    width: 60vw;
+
+    height: auto;
+
+    border-radius: 30px;
+    padding: 20px 0px 20px 0px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+
+    background-image: linear-gradient(#ffffffce, #f0f0f036);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 2px solid #ffffff;
+
+}
+
+.comment-user {
+    display: flex;
+    width: 70%;
+    height: auto;
+
+    padding: 10px;
+    border-radius: 15px;
+
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+
+    background-image: linear-gradient(#ffffffce, #f0f0f09d);
+    box-shadow: 0px 2px 15px #00000050;
+}
+
+.info {
+    font-family: sf-bold;
+    background-image: linear-gradient(#182B5A, #121F40);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    margin-top: -1vh;
+    margin-bottom: 1vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.user-photo {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    transform: scale(0.7);
+    box-shadow: 0px 2px 15px #00000050;
+    border-radius: 50%;
+    margin-top: 7px;
+    top: -11px;
+}
+
+.user-name {
+    font-family: sf-bold;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-size: 1rem;
+}
+
+.user-date {
+    font-family: sf-bold;
+    margin-bottom: 7px;
+    font-size: 0.8rem;
+}
+
+.user-comment {
+    font-family: sf-regular;
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+}
