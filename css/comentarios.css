@@ -46,7 +46,7 @@ main {
     height: auto;
 
     border-radius: 30px;
-    padding: 20px 0px 20px 0px ;
+    padding: 20px 0px 20px 0px;
 
     display: flex;
     flex-direction: column;
@@ -54,9 +54,10 @@ main {
     border-radius: 30px;
 
     background-image: linear-gradient(#ffffffce, #f0f0f036);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
     border: 2px solid #ffffff;
+    margin-bottom: 2rem;
 
 }
 
@@ -76,12 +77,12 @@ main {
 }
 
 .info {
-    font-family: sf-bold;
+    font-family: sf-semi;
     background-image: linear-gradient(#182B5A, #121F40);
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 15px;
-    margin-top: -1vh;
+    margin-top: 1rem;
     margin-bottom: 1vh;
     padding: 10px;
     text-align: center;
@@ -115,4 +116,62 @@ main {
     font-family: sf-regular;
     font-size: 0.8rem;
     margin-bottom: 7px;
+}
+
+/* Inputs */
+
+.comment-input {
+    display: inline-grid;
+    justify-content: center;
+}
+
+
+::placeholder {
+    color: #3534358c;
+    background-color: none;
+}
+
+
+.comment-input-text {
+    margin: 2rem 0px 2rem 0px;
+    width: 30vw;
+    height: auto;
+    font-size: 1.1rem;
+    font-family: sf-regular;
+    text-align: center;
+
+    padding: 15px;
+
+    background-image: linear-gradient(#ffffff3f, #8f8f8f28);
+    box-shadow: 0px 2px 15px #0000003b;
+    border: none;
+    border-radius: 15px;
+    color: #353435;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+
+}
+
+.comment-input-submit {
+    background-image: linear-gradient(#182B5A, #121F40);
+    color: #fff;
+    outline: none;
+
+    padding: 5px;
+    margin: auto;
+    width: 15vw;
+
+    font-family: sf-bold;
+    font-size: 1.3rem;
+
+    border-radius: 15px;
+    border: 0px solid #fff;
+
+}
+
+iframe {
+    width: 40vw;
+    height: 40vh;
+    margin-top: 2rem;
 }

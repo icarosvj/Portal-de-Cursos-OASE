@@ -29,7 +29,7 @@ nav {
 }
 
 #navbar {
-    position: fixed;
+    position: absolute;
 
     width: 60vw;
     height: 45px;
@@ -99,6 +99,7 @@ nav {
 
 .dropdown:hover .dropdown-content {
     display: grid;
+    position: absolute;
 }
 
 .dropdown:hover .dropsection {
