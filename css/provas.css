@@ -14,6 +14,13 @@
     src: url(../font/sf-bold.otf);
 }
 
+:root {
+    --cortexto1: #182B5A;
+  }
+
+:root {
+    --backcolor: linear-gradient(#182B5A, #121F40);
+}
 
 * {
     margin: 0px;
@@ -44,14 +51,118 @@ main {
 
 
 .prova {
-    width: 40vw;
+    width: 45vw;
     height: auto;
 
-    background-image: linear-gradient(#dbdbdb3d, #ffffff88);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prova-title {
+    font-family: sf-bold;
+    background-image: var(--backcolor);
+    color: #fff;
+
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 2px 15px #00000041;
+}
+
+.prova-content {
+    background-image: linear-gradient(#ffffffd5, #ffffff85);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
     border-radius: 15px;
-    box-shadow: 0px 2px 15px #0000003b;
+    box-shadow: 0px 2px 15px #0000001f;
 
     padding: 20px;
+}
+
+.prova-quest {
+    font-size: 2.2rem;
+    font-family: sf-bold;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border-color: #d1d1d1ab;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    opacity: 50%;
+	box-shadow: 0 20px 20px -20px #333;
+  }
+
+.prova-desc {
+    font-family: sf-regular;
+    min-width: 506px;
+    max-width: 506px;
+
+    height: auto;
+}
+
+.checkboxes-l1 {
+    margin: 0.4rem;
+}
+
+label {
+    font-family: sf-regular;
+    font-size: 1rem;
+
+    text-align: center;
+
+}
+
+.prova-checkboxes {
+    background-image: linear-gradient(#ffffff11, #4277fc04);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #00000034;
+
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 10px;
+}
+
+.prova-content [type=button] {
+    background-image: linear-gradient(#182B5A, #121F40);
+    color: #fff;
+    outline: none;
+    
+    padding: 10px;
+    font-family: sf-regular;
+    font-size: 1rem;
+
+    border-radius: 10px;
+    border: 0px solid #fff;
+    cursor: pointer;
+
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+
+    accent-color: #203d88;
+  }
+
+
+/* Resposta Desc */
+
+.prova-resp-desc {
+    width: 100%;
+    height: 30vh;
+    font-size: 1.1rem;
+    font-family: sf-regular;
+    resize: none;
+    padding: 15px;
+
+    background: transparent;
+
+    box-shadow: 0px 2px 15px #0000003b;
+    border: none;
+    border-radius: 10px;
+    color: #353435;
+    outline: none;
+
 }
