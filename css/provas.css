@@ -1,0 +1,57 @@
+/*add-font*/
+@font-face {
+    font-family: sf-regular;
+    src: url(../font/sf-regular.otf);
+}
+
+@font-face {
+    font-family: sf-semi;
+    src: url(../font/sf-semibold.otf);
+}
+
+@font-face {
+    font-family: sf-bold;
+    src: url(../font/sf-bold.otf);
+}
+
+
+* {
+    margin: 0px;
+    user-select: none;
+    box-sizing: border-box;
+    user-select: none
+}
+
+
+body {
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    margin-top: 3vh;
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Prova */
+
+
+.prova {
+    width: 40vw;
+    height: auto;
+
+    background-image: linear-gradient(#dbdbdb3d, #ffffff88);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px #0000003b;
+
+    padding: 20px;
+}
