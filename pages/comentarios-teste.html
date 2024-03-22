@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comentarios.css">
+    <title>Teste</title>
+</head>
+<body>
+        <div v-if="curso_comentario > 0" class="comments_main">
+        <div class="comments">
+            <!--<p @Click="curso_comentario = 0" style="top: 2%; left:2%; position:absolute;" class="close">X</p>-->
+            <span @Click="curso_comentario = 0; curso_comentar = null" class="material-symbols-outlined"
+                id="close">close</span>
+            <div class="info">
+                <p class="title">Comentários</p>
+            </div>
+            <div id="comentariosz" class="comment-section">
+                <div v-for="comment in curso_comentarios" class="comment-user">
+                    <section class="user-info">
+                    <img src="../img/user-1.jpg" alt="" class="user-photo">
+                        <p class="user-name">Ícaro</p>
+                        <p class="user-date">22/03/2024</p>
+                        <p class="user-comment">kfjnbjfgvnosndcmkjdefn</p>
+                    </section>
+                    </div>
+            </div>
+</body>
+</html>

@@ -14,36 +14,22 @@
     src: url(../font/sf-bold.otf);
 }
 
-
-* {
-    margin: 0px;
-    user-select: none;
-    box-sizing: border-box;
-    user-select: none
-}
-
-
-body {
-    background-image: url(/img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-main {
-    margin-top: 3vh;
+.comments_main {
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.568);
     width: 100vw;
-    height: auto;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    height: 100vh;
+    z-index: 10;
 }
 
 .comments {
-    width: 60vw;
+    position: absolute;
+    top: 11%;
+    left: 18.5%;
 
-    height: auto;
+    width: 62.5vw;
+    height: 75vh;
 
     border-radius: 30px;
     padding: 20px 0px 20px 0px;
@@ -58,63 +44,70 @@ main {
     -webkit-backdrop-filter: blur(13.5px);
     border: 2px solid #ffffff;
     margin-bottom: 2rem;
+}
+
+.comment-section {
+
+    padding: 4px;
+    width: 70%;
+    height: 80%;
+    overflow-y: auto;
 
 }
 
 .comment-user {
-    display: flex;
-    width: 70%;
-    height: auto;
-
     padding: 10px;
     border-radius: 15px;
 
     margin-bottom: 7.5px;
     margin-top: 7.5px;
-
-    background-image: linear-gradient(#ffffffce, #f0f0f09d);
+    background-image: linear-gradient(#fffffff5, #f0f0f09d);
     box-shadow: 0px 2px 15px #00000050;
+
+    display: flex;
+    justify-items: center;
 }
 
 .info {
     font-family: sf-semi;
+    width: 30%;
     background-image: linear-gradient(#182B5A, #121F40);
     color: #fff;
     font-size: 1.3rem;
     border-radius: 15px;
-    margin-top: 1rem;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     padding: 10px;
     text-align: center;
 }
-
 .user-photo {
     position: relative;
-    width: 70px;
-    height: 70px;
-    transform: scale(0.7);
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    transform: scale(0.8);
     box-shadow: 0px 2px 15px #00000050;
     border-radius: 50%;
     margin-top: 7px;
-    top: -11px;
+    background-color: transparent;
 }
 
 .user-name {
     font-family: sf-bold;
     margin-bottom: 7px;
     margin-top: 7px;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    bottom: 35px;
 }
 
 .user-date {
-    font-family: sf-bold;
+    font-family: sf-regular;
     margin-bottom: 7px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .user-comment {
-    font-family: sf-regular;
-    font-size: 0.8rem;
+    font-family: sf-bold;
+    font-size: 1rem;
     margin-bottom: 7px;
 }
 
@@ -134,15 +127,15 @@ main {
 
 .comment-input-text {
     margin: 2rem 0px 2rem 0px;
-    width: 30vw;
+    width: 35vw;
     height: auto;
     font-size: 1.1rem;
     font-family: sf-regular;
-    text-align: center;
+    text-align: left;
 
     padding: 15px;
 
-    background-image: linear-gradient(#ffffff3f, #8f8f8f28);
+    background-image: linear-gradient(#ffffff77, #8f8f8f49);
     box-shadow: 0px 2px 15px #0000003b;
     border: none;
     border-radius: 15px;
@@ -150,7 +143,12 @@ main {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     outline: none;
+    resize: none;
 
+}
+
+.comment-input-text:focus {
+    background-image: linear-gradient(#ffffff, #ffffff);
 }
 
 .comment-input-submit {
@@ -167,11 +165,36 @@ main {
 
     border-radius: 15px;
     border: 0px solid #fff;
+    box-shadow: 0px 2px 15px #00000050;
+    transition: 1s;
 
 }
 
-iframe {
-    width: 40vw;
-    height: 40vh;
-    margin-top: 2rem;
+.comment-input-submit:hover {
+    transition: 1s;
+    background-image: linear-gradient(#213a7a, #132657);
+    box-shadow: 0px 2px 15px #00000096;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#close { /*"X" para Fechar a Aba*/
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 2rem;
+
+    color: #132657;
+    transition: 1s;
+}
+
+#close:hover {
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
