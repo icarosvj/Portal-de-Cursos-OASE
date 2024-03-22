@@ -1,0 +1,100 @@
+/*add-font*/
+@font-face {
+    font-family: sf-regular;
+    src: url(../font/sf-regular.otf);
+}
+
+@font-face {
+    font-family: sf-semi;
+    src: url(../font/sf-semibold.otf);
+}
+
+@font-face {
+    font-family: sf-bold;
+    src: url(../font/sf-bold.otf);
+}
+
+@font-face {
+    font-family: sf-thin;
+    src: url(../font/sf-thin.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    width: 80%; 
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+    height: 500px;
+}
+
+.main-2 {
+    margin-right: 15px;
+}
+
+/*Informações do Usuário*/
+
+.index-inform {
+    width: 30%;
+    padding: 15px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.index-img-user {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0px 15px #00000023;
+    border: 3px solid #ffffff59;
+    object-fit: contain;
+}
+
+.index-hello {
+    font-family: sf-bold;
+}
+
+.content {
+    font-family: sf-regular;
+}
+
+/*Inf-Cursos*/
+
+.index-courses-att {
+    margin-bottom: 15px;
+}
+
+.index-provas {
+}
+
+/* Grupos */
+
+.index-courses-att, .index-provas {
+    width: 800px;
+    height: 48.5%;
+    padding: 15px;
+}
+
+.index-inform, .index-courses-att, .index-provas {
+    background-image: linear-gradient(#dbdbdbc4, #ffffffbe);
+    border-radius: 15px;
+    box-shadow: 0 0px 15px #00000023;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
