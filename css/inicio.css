@@ -44,45 +44,8 @@ main {
 
 .main-2 {
     margin-right: 15px;
-}
-
-/*Informações do Usuário*/
-
-.index-inform {
-    width: 30%;
-    padding: 15px;
     
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
-
-.index-img-user {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0px 15px #00000023;
-    border: 3px solid #ffffff59;
-    object-fit: contain;
-}
-
-.index-hello {
-    font-family: sf-bold;
-}
-
-.content {
-    font-family: sf-regular;
-}
-
-/*Inf-Cursos*/
-
-.index-courses-att {
-    margin-bottom: 15px;
-}
-
-.index-provas {
-}
-
 /* Grupos */
 
 .index-courses-att, .index-provas {
@@ -91,10 +54,80 @@ main {
     padding: 15px;
 }
 
-.index-inform, .index-courses-att, .index-provas {
-    background-image: linear-gradient(#dbdbdbc4, #ffffffbe);
+.index-inform, .index-courses-att, .index-provas, .index_user_stats, .index-provas-div2, .index-provas-div1 {
+    background-image: linear-gradient(#dbdbdb70, #ffffff);
+    border: 4px solid #fff;
     border-radius: 15px;
-    box-shadow: 0 0px 15px #00000023;
+    box-shadow: 0 0px 15px #00000041;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+/*Informações do Usuário*/
+
+.index-inform {
+    width: 30%;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.index_user_img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #ffffff36;
+    border: 4px solid #ffffff91;
+
+}
+
+.index_user_name {
+    font-family: sf-bold;
+    color: #132247;
+    text-align: center  ;
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+
+}
+
+.index_user_stats {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 15px #0000002d;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+}
+
+
+
+
+/*Inf-Cursos*/
+.index-courses-att {
+    margin-bottom: 15px;
+}
+
+/* Provas e Notas*/ 
+.index-provas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-provas-div1 {
+    width: 49%;
+    height: 100%;
+    padding: 15px;
+
+    font-family: sf-regular;
+}
+.index-provas-div2 {
+    width: 49%;
+    height: 100%;
+    padding: 15px;
+
+    font-family: sf-regular;
 }
